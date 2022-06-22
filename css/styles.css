@@ -4,8 +4,18 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 300;
 }
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Patua One', serif;
+}
+
+.card a{
+    text-decoration: none!important;
+    color: black!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: grey;
 }
 
 /* Wordmark */
@@ -17,6 +27,14 @@ h1, h2, h3, h4, h5, h6{
     background-size: cover;
     background-position: 50% 30%;
     background-blend-mode: multiply;
+}
+
+#cs #hero{
+    background-image: url(../img/csBanner.jpg);
+}
+
+#vgd #hero{
+    background-image: url(../img/vgdBanner2.jpg);
 }
 
 /* Background */
