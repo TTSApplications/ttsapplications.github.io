@@ -94,19 +94,14 @@ ul.timeline > li:before {
 #contact *{
     box-sizing: border-box;
   }
-  #contact html,body{
+  #contact html, #contact body{
     display: grid;
     height: 100%;
     width: 100%;
-    /* place-items: center; */
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   }
-  #contact .icons_container{
-    /* display: inline-flex; */
+  #contact .icons_container{ 
     display: block;
-    /* display: contents; */
-    /* display: flexbox; */
-  }
+  } 
   #contact .icons_container .icon{
     margin: 0 10px;
     text-align: center;
@@ -199,6 +194,12 @@ ul.timeline > li:before {
     background: #DE463B;
   }
 
+  /* Social Media Icons */
+  /* #contact a:hover span,
+  #contact a:hover .tooltip,
+  #contact a:hover .tooltip:before{
+    background: #0E76A8;
+  }
 
 /* Background */
 
