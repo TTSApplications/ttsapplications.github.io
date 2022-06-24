@@ -23,7 +23,11 @@ h1, h2, h3, h4, h5, h6{
     background-color: grey;
 }
 
-/* Wordmark */
+
+.carousel-dark .carousel-caption {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
 /* Hero */
 
@@ -52,6 +56,11 @@ h1, h2, h3, h4, h5, h6{
 
 #skills #hero{
     background-image: url(../img/skillsBanner.jpg);
+}
+
+#other #hero{
+    background-image: url(../img/otherBanner.jpg);
+    background-position: 50% 40%;
 }
 
 /* Timeline */
@@ -193,13 +202,3 @@ ul.timeline > li:before {
   #contact .icons_container .youtube:hover .tooltip:before{
     background: #DE463B;
   }
-
-  /* Social Media Icons */
-  /* #contact a:hover span,
-  #contact a:hover .tooltip,
-  #contact a:hover .tooltip:before{
-    background: #0E76A8;
-  }
-
-/* Background */
-
