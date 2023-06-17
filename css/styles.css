@@ -5,6 +5,10 @@ body{
     font-weight: 300;
 }
 
+#edu body{
+  position: relative;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Patua One', serif;
 }
@@ -32,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
 /* Hero */
 
 #hero{
-    background-image: url(../img/quantumComputer.jpg);
+    background-image: url(../img/qubitBanner.jpg);
     background-size: cover;
     background-position: 50% 30%;
     background-blend-mode: multiply;
@@ -58,9 +62,18 @@ h1, h2, h3, h4, h5, h6{
     background-image: url(../img/skillsBanner.jpg);
 }
 
+#edu #hero{
+  background-image: url(../img/educationBanner.png);
+  background-position: 50% 50%;
+}
+
 #other #hero{
     background-image: url(../img/otherBanner.jpg);
     background-position: 50% 40%;
+}
+
+#blog #hero{
+  background-image: url(../img/csBanner.jpg);
 }
 
 /* Timeline */
@@ -201,4 +214,12 @@ ul.timeline > li:before {
   #contact .icons_container .youtube:hover .tooltip,
   #contact .icons_container .youtube:hover .tooltip:before{
     background: #DE463B;
+  }
+
+  #blog p {
+    text-indent: 20px;
+  }
+
+  #home p {
+    text-indent: 20px;
   }
