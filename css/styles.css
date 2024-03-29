@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5, h6{
   background-position: 50% 50%;
 }
 
+#tela #hero{
+  background-image: url(https://telaport-prod.nyc3.cdn.digitaloceanspaces.com/html/static/images/Telaport_Beta_Logo.png);
+  background-position: 50% 50%;
+}
+
 #other #hero{
     background-image: url(../img/otherBanner.jpg);
     background-position: 50% 40%;
