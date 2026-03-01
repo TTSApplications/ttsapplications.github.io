@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Worthy...</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #000; color: #fff; }
+        .loading { text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="loading">
+    <h2>Redirecting to the App Store...</h2>
+    <p>If you are not redirected, <a id="fallback-link" href="#" style="color: #00A3FF;">click here</a>.</p>
+</div>
+
+<script>
+    (function() {
+        const iOSLink = "https://apps.apple.com/app/worthy-ai-value-finder/id6753152571";
+        const androidLink = "https://play.google.com/store/apps/details?id=com.ttsapplications.worthy";
+        const fallbackLink = "https://apps.apple.com/app/worthy-ai-value-finder/id6753152571"; // For desktop users
+
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const fallbackElement = document.getElementById('fallback-link');
+
+        // Logic to detect OS
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = iOSLink;
+            fallbackElement.href = iOSLink;
+        } 
+        else if (/android/i.test(userAgent)) {
+            window.location.href = androidLink;
+            fallbackElement.href = androidLink;
+        } 
+        else {
+            // Desktop or other OS
+            window.location.href = fallbackLink;
+            fallbackElement.href = fallbackLink;
+        }
+    })();
+</script>
+
+</body>
+</html>
